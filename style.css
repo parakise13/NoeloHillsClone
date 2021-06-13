@@ -1,3 +1,204 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Quicksand:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700&display=swap');
+
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+button{border: none; background-color: transparent;}
+/*
+    font
 font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto Slab', serif;
+font-family: 'Baloo Tammudu 2', cursive;
+*/
+/*background - #fff5d6*/
+/*layout*/
+
+body {
+    box-sizing: border-box;
+    padding-bottom: 148px;
+}
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*공통*/
+
+.inner {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+/*header*/
+.header01 {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #fff5d6;
+    top: 0;
+    border-top: 1px solid #fff5d6;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
+    position: sticky;
+
+}
+
+.header01 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header01 .inner ul.main_menu {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #797d7e;
+}
+
+.header01 .inner ul.main_menu li {
+    padding: 0 30px;
+}
+
+.header01 .inner ul.side_icons {
+    display: flex;    
+}
+
+.header01 .inner ul.side_icons li{
+    padding: 0 20px;
+}
+
+.header01 .inner ul.side_icons li:last-child,
+.header01 .inner ul.main_menu li:last-child {
+    padding-right: 0;
+}
+
+/*main contents 01*/
+.content01 {
+    width: 100%;
+    background-color: #fff5d6;
+    padding-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.content01 .inner .carousel-inner {
+    width: 85%;
+    margin: 0 auto;
+
+}
+.content01 .inner .carousel-inner .carousel-item{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.content01 .inner .carousel-inner .carousel-item p.img{
+    float: right;
+    width: 60%;
+}
+
+.content01 .inner .carousel-inner .carousel-item p.img img {
+    width: 100%;
+}
+
+.content01 .inner .carousel-inner .carousel-item .banner_text {
+    width: 40%;
+    padding-top: 150px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #797d7e;
+}
+
+.content01 .inner .carousel-inner .carousel-item .banner_text li {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.content01 .inner .carousel-inner .carousel-item .banner_text li.banner_tit_eng,
+.content01 .inner .carousel-inner .carousel-item .banner_text li.banner_tit_kor {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.content01 .inner .carousel-inner .carousel-item .banner_text li.banner_tit_eng {
+    font-family: 'Roboto Slab', serif;
+}
+
+.content01 .inner .carousel-inner .carousel-item .banner_text li:first-child {
+    padding-top: 0;
+    padding-bottom: 0px;
+}
+
+.content01 .inner .carousel-inner .carousel-item .banner_text li .moreBtn {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-weight: 800;
+    font-size: 23px;
+    color: #f9ce42;
+}
+
+/*main contents 02*/
+
+.contents02 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents02 .inner .header02 {
+    text-align: center;
+    margin-top: 85px;
+}
+
+.contents02 .inner .header02 .innerHeader02 {
+    font-size: 33px;
+    font-family: 'Roboto Slab', serif;
+    color: #797d7e;
+    letter-spacing: 1px;
+}
+
+.contents02 .inner .header02 .innerHeader02 .small_tit {
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: #f9ce42;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.contents02 .inner .strength {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.contents02 .inner .strength li p.img {
+    width: 100%;
+    align-items: center;
+}
+
+.contents02 .inner .strength li p.img img {
+    width: 100%;
+}
+
+#smallsize {
+    padding: 25px 0;
+}
+
+.contents02 .inner .strength li ul.iconExplain {
+    align-items: center;
+}
